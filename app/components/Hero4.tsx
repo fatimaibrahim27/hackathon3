@@ -6,7 +6,6 @@ import { ourmenu } from "@/sanity/lib/query";
 import { menu } from "@/types/menu";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import Link from "next/link";
 import { addToCart } from "../actions/page";
 import Swal from "sweetalert2"
