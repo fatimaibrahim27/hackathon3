@@ -1,6 +1,5 @@
 'use client';
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'; // Import Image for optimization
 import React from 'react';
 
 export default function Hero() {
@@ -70,22 +69,6 @@ export default function Hero() {
           </p>
           <button className="bg-green-800 text-white font-bold py-2 px-6 rounded mt-6 hover:bg-green-600 transition">
             Show More
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
           </button>
         </div>
       </section>
@@ -133,10 +116,12 @@ export default function Hero() {
 
         {/* Image Section */}
         <div className="flex-shrink-0 mt-6 sm:mt-0 sm:ml-8 w-full sm:w-1/2">
-          <img
+          <Image
             src="/main.jpg"  // Make sure this path is correct
             alt="Delicious Food"
             className="w-full h-auto object-cover rounded-lg"
+            width={500}   // Add width for optimization
+            height={400}  // Add height for optimization
           />
         </div>
       </div>
