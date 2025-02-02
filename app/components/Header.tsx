@@ -1,18 +1,17 @@
-'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);  // Initialize mobile menu state
-  const [cartItemCount, setCartItemCount] = useState(3);  // Example cart item count (can be dynamic)
-  const [searchQuery, setSearchQuery] = useState('');  // State to manage the search query
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [cartItemCount] = useState(3); // Only use the cartItemCount state, no need for setter
+  const [searchQuery, setSearchQuery] = useState('');
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);  // Toggle mobile menu visibility
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value); // Update the search query as the user types
+    setSearchQuery(e.target.value);
   };
 
   return (
