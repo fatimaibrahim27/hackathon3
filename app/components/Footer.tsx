@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Importing icons
+import Image from 'next/image'; // Importing the Image component from Next.js
 
 const Footer = () => {
   return (
@@ -56,9 +57,12 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg">Instagram Gallery</h3>
             <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
-              <img src="/Group 26.png" alt="Insta 1" className="w-full h-32 object-cover rounded-md" />
-              <img src="/Group 26.png" alt="Insta 2" className="w-full h-32 object-cover rounded-md" />
-              <img src="/Group 26.png" alt="Insta 3" className="w-full h-32 object-cover rounded-md" />
+              <Image
+                src="/Group 26.png" alt="Insta 1" className="w-full h-32 object-cover rounded-md" width={320} height={128} />
+              <Image
+                src="/Group 26.png" alt="Insta 2" className="w-full h-32 object-cover rounded-md" width={320} height={128} />
+              <Image
+                src="/Group 26.png" alt="Insta 3" className="w-full h-32 object-cover rounded-md" width={320} height={128} />
             </div>
           </div>
         </div>
